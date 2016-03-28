@@ -1,0 +1,17 @@
+<head>
+    <title>imageShare</title>
+</head>
+
+<body>
+{{>welcome}}
+</body>
+
+<template name="image">
+    <img src="{{this.url}}" alt="{{this.alt}}"/>
+</template>
+
+<template name="images">
+    {{#each aImages}}
+        {{> image url=url alt=alt}}
+    {{/each}}
+</template>
