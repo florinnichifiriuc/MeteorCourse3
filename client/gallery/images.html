@@ -1,0 +1,14 @@
+<template name="images">
+    <h1> Gallery</h1>
+    <hr>
+    <a href="{{pathFor route='addimage'}}">Add new image</a>
+    <hr>
+    {{#each aImages}}
+        <article>
+            {{_id}} {{description}}
+            {{> image}}
+            <br/>
+            <a href="{{pathFor route='viewimage' _id=_id}}">go to {{alt}} details</a>
+        </article>
+    {{/each}}
+</template>

@@ -1,0 +1,21 @@
+<template name="edit-image">
+    <section>
+        <h3>Edit image</h3>
+        <img src="{{url}}" alt="{{alt}}"/>
+        <p>
+            <label>Url:</label>
+            <input name="url" value="{{url}}" placeholder="Edit your full url here"/>
+        </p>
+        <p>
+            <label>Alt:</label>
+            <input name="alt" value="{{alt}}" placeholder="Edit your alternative text here"/>
+        </p>
+        <p>
+            <label>Description:</label>
+            <textarea name="description" placeholder="Edit your description here">{{description}}</textarea>
+        </p>
+        <p>
+            <button name="editImage">Edit Image</button>
+        </p>
+    </section>
+</template>

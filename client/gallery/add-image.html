@@ -1,0 +1,21 @@
+<template name="add-image">
+    <h3>Add image</h3>
+    <section id="add-image">
+        <img src="{{url}}" alt="{{alt}}"/>
+        <p>
+            <label>Url:</label>
+            <input name="url" value="{{url}}" placeholder="Add your full url here"/>
+        </p>
+        <p>
+            <label>Alt:</label>
+            <input name="alt" value="{{alt}}" placeholder="Add your alternative text here"/>
+        </p>
+        <p>
+            <label>Description:</label>
+            <textarea name="description" placeholder="Add your description here">{{description}}</textarea>
+        </p>
+        <p>
+            <button name="addImage">Add Image</button>
+        </p>
+    </section>
+</template>

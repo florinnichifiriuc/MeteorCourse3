@@ -1,0 +1,22 @@
+<template name="image">
+    <section>
+        <img src="{{this.url}}" alt="{{this.alt}}"/>
+        <ul>
+            <li>Rate this image:</li>
+            {{#each votingOptions}}
+                <li>
+                    <input name="votingOptions{{../_id}}" type="radio" value="{{voteCountAs}}" title="{{displayName}}"/>
+                </li>
+            {{/each}}
+            <li>{{vote}}</li>
+        </ul>
+
+        <hr>
+        {{#if isCreator}}
+        <p>
+            <a href="{{pathFor route="editimage" _id=_id}}">Edit image</a>
+            <a href="" id="js-delete">Delete image</a>
+        </p>
+       {{/if}}
+    </section>
+</template>
